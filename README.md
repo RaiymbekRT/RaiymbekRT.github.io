@@ -1,2 +1,0 @@
-# RaiymbekRT.github.io
-.
