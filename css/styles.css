@@ -10,7 +10,7 @@ body {
   
   /* Header styles */
   header {
-    background-color: #4CAF50;
+    background-color: #266728;
     padding: 20px;
     text-align: center;
     color: white;
@@ -58,7 +58,7 @@ body {
   
   /* Footer styles */
   footer {
-    background-color: #4CAF50;
+    background-color: #266728;
     display: flex;
     color: white;
     height: 60px;
