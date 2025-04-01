@@ -1,0 +1,109 @@
+html {
+    scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+body {
+    color: #008f0c;
+    background-color: #ffffff;
+    padding: 5px;
+    margin: 15px;
+    font-size: 25px;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 1.95em;
+}
+
+h2 {
+    text-align: center;
+}
+
+li {
+    margin-top: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+figure {
+    text-align: center;
+    padding: 10px;
+    border: 5px solid #79571a;
+    border-radius: 35px;
+    background-color: white;
+}
+
+img {
+    width: 100%;
+    display: block;
+    border-radius: inherit;
+}
+
+@media (min-width: 772px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    figure {
+        border-radius: 50%;
+        height: 260px;
+    }
+    
+    figure:last-child {
+        grid-column: span 2;
+    }
+
+    img{
+        height: 100%;
+        width: 100%;
+    }
+
+    figcaption {
+        margin: 20px;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    figure {
+        border-radius: 0;
+    }
+    
+    figure:nth-child(3n) {
+        grid-column: span 2;
+    }
+}
+
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #222;
+        color: #f4d03f;
+    }
+    
+    figure {
+        background-color: #333;
+        color: #f4d03f;
+        border-color: black;
+    }
+
+    a{
+        color:#f4d03f;
+    }
+}
